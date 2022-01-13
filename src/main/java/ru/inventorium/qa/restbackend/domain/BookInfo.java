@@ -7,15 +7,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonNaming(value = PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class UserInfo {
-
-    private Date loginDate;
-    private String userName;
+public class BookInfo {
+    private String bookName;
+    private String bookAuthor;
+    private String bookIsbn;
+    private long bookPrice;
 }
